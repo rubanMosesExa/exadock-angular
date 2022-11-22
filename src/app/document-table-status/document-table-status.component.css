@@ -1,0 +1,13 @@
+.container {
+    width: 76px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    
+}
+
+p {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 4px;
+}
