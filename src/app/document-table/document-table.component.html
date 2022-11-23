@@ -8,13 +8,25 @@
                 <th>Last Updated</th>
                 <th class="last-column">Status</th>
             </tr>
-            <tr *ngFor="let document of documentList" id="child">
-                <td><app-document-table-name [name]=document.name [docTypeName]=document.doctype></app-document-table-name></td>
+            <tr *ngFor="let document of documentList" (click)="onClickOfTable(document.id)"
+                [ngStyle]="{'background-color': selectedDocumentId ===  document.id ? '#E2E7FD' : 'white' }">
+                <td>
+                    <app-document-table-name [name]=document.name [docTypeName]=document.doctype>
+                    </app-document-table-name>
+                </td>
                 <td>{{document.description}}</td>
-                <td><app-document-table-date [primaryText]="document.createdOn" [secondaryText]="document.createdTime"></app-document-table-date></td>
-                <td><app-document-table-date [primaryText]="document.lastUpdatedBy" [secondaryText]="document.lastUpdated"></app-document-table-date></td>
-                <td class="status-column"><app-document-table-status [status]="document.status"></app-document-table-status></td>
+                <td>
+                    <app-document-table-date [primaryText]="document.createdOn" [secondaryText]="document.createdTime">
+                    </app-document-table-date>
+                </td>
+                <td>
+                    <app-document-table-date [primaryText]="document.lastUpdatedBy"
+                        [secondaryText]="document.lastUpdated"></app-document-table-date>
+                </td>
+                <td class="status-column">
+                    <app-document-table-status [status]="document.status"></app-document-table-status>
+                </td>
             </tr>
         </table>
     </div>
-</div>
+</div>ß
