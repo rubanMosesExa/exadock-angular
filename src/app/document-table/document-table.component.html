@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="table-header">
+    <div style="height: 700px; overflow: auto;">
         <table>
             <tr>
                 <th>Name</th>
@@ -8,13 +8,35 @@
                 <th>Last Updated</th>
                 <th class="last-column">Status</th>
             </tr>
-            <tr *ngFor="let document of documentList" id="child">
-                <td><app-document-table-name [name]=document.name [docTypeName]=document.doctype></app-document-table-name></td>
+            <tr *ngFor="let document of documentList" (click)="onClickOfTable(document)"
+                [ngStyle]="{'background-color': selectedDocument && selectedDocument.id ===  document.id ? '#E2E7FD' : 'white' }">
+                <td>
+                    <app-document-table-name [name]=document.name [docTypeName]=document.doctype>
+                    </app-document-table-name>
+                </td>
                 <td>{{document.description}}</td>
-                <td><app-document-table-date [primaryText]="document.createdOn" [secondaryText]="document.createdTime"></app-document-table-date></td>
-                <td><app-document-table-date [primaryText]="document.lastUpdatedBy" [secondaryText]="document.lastUpdated"></app-document-table-date></td>
-                <td class="status-column"><app-document-table-status [status]="document.status"></app-document-table-status></td>
+                <td>
+                    <app-document-table-date [primaryText]="document.createdOn" [secondaryText]="document.createdTime">
+                    </app-document-table-date>
+                </td>
+                <td>
+                    <app-document-table-date [primaryText]="document.lastUpdatedBy"
+                        [secondaryText]="document.lastUpdated"></app-document-table-date>
+                </td>
+                <td class="status-column">
+                    <app-document-table-status [status]="document.status"></app-document-table-status>
+                </td>
             </tr>
         </table>
     </div>
+    <!-- <div  style="background-color: aquamarine; width: 45%;  margin-left: 24px; -moz-box-shadow: 0 0 5px 5px #E2E7FD;
+-webkit-box-shadow: 0 0 5px 5px#E2E7FD;
+    box-shadow: 0 0 5px 5px #E2E7FD;
+    border-radius: 3px;">
+
+        <img style="width: 56px;
+        padding: 16px;" src="../../assets/zipIcon.png">
+
+
+    </div> -->
 </div>
