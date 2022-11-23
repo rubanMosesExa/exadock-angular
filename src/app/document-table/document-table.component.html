@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="table-header">
+    <div style="height: 700px; overflow: auto;">
         <table>
             <tr>
                 <th>Name</th>
@@ -8,8 +8,8 @@
                 <th>Last Updated</th>
                 <th class="last-column">Status</th>
             </tr>
-            <tr *ngFor="let document of documentList" (click)="onClickOfTable(document.id)"
-                [ngStyle]="{'background-color': selectedDocumentId ===  document.id ? '#E2E7FD' : 'white' }">
+            <tr *ngFor="let document of documentList" (click)="onClickOfTable(document)"
+                [ngStyle]="{'background-color': selectedDocument && selectedDocument.id ===  document.id ? '#E2E7FD' : 'white' }">
                 <td>
                     <app-document-table-name [name]=document.name [docTypeName]=document.doctype>
                     </app-document-table-name>
@@ -29,4 +29,14 @@
             </tr>
         </table>
     </div>
-</div>ß
+    <!-- <div  style="background-color: aquamarine; width: 45%;  margin-left: 24px; -moz-box-shadow: 0 0 5px 5px #E2E7FD;
+-webkit-box-shadow: 0 0 5px 5px#E2E7FD;
+    box-shadow: 0 0 5px 5px #E2E7FD;
+    border-radius: 3px;">
+
+        <img style="width: 56px;
+        padding: 16px;" src="../../assets/zipIcon.png">
+
+
+    </div> -->
+</div>

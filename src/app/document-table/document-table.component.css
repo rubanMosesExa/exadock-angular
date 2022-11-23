@@ -1,5 +1,9 @@
 .container {
     margin: 24px;
+    /* display: flex; */
+    align-content: space-around;
+    /* background-color: aqua; */
+    /* height: 1000px; */
     /* border:5px solid green */
 }
 
@@ -26,8 +30,6 @@ tr {
     height: 72px;
     border-bottom: 1px solid #E2E7FD;
     padding-left: 16px;
-    overflow: scroll;
-
 }
 
 /* tr :hover {
