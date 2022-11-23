@@ -15,7 +15,7 @@ export class DocumentTableComponent implements OnInit {
       {
         "id": 1,
         "name": "Ruban November Internet Bill",
-        "description": "Ruban November Internet Bill Description",
+        "description": "Ruban November Description",
         "createdOn": "4-Nov-2022",
         "createdTime": "11.55AM",
         "lastUpdated": "4-Nov-2022",
