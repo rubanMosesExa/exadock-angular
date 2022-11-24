@@ -10,6 +10,7 @@ import { DocumentTableStatusComponent } from './document-table-status/document-t
 import { LoginFormComponent } from './login-form/login-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { GridLayoutComponent } from './grid-layout/grid-layout.component';
+import { FlexBoxResponsiveComponent } from './flex-box-responsive/flex-box-responsive.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GridLayoutComponent } from './grid-layout/grid-layout.component';
     DocumentTableDateComponent,
     DocumentTableStatusComponent,
     LoginFormComponent,
-    GridLayoutComponent
+    GridLayoutComponent,
+    FlexBoxResponsiveComponent
   ],
   imports: [
     BrowserModule,

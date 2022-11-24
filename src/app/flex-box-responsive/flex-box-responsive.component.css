@@ -1,0 +1,22 @@
+/* #container {
+    display: flex;
+    justify-content: stretch;
+    background-color: rgb(185, 185, 241);
+    flex-direction: row;
+}
+
+button {
+    height: 48px;
+    width: 144px;
+    background-color: rgb(230, 2, 255);
+    border-radius: 8px;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+@media (max-width: 650px) {
+    #container {
+        flex-direction: column;
+    }
+} */
