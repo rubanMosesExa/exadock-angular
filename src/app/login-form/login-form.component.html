@@ -1,26 +1,13 @@
-<div style="background-color: antiquewhite; padding: 24px; width: 15%;">
+<div style="padding: 24px; width: 15%;">
     <div style="padding: 24px;">
         <label for="username-input">User Name: </label>
-        <input id="username-input" (keyup)="onKey($event,'userName')" placeholder="User Name" type="text" />
+        <input id="username-input" [formControl]="userName" placeholder="User Name" type="text" />
     </div>
     <div style="padding: 24px;">
         <label for="password-input">Password: </label>
-        <input id="password-input" (keyup)="onKey($event,'password')" placeholder="Password" type="password" />
+        <input id="password-input" [formControl]="password" placeholder="Password" type="password" />
     </div>
     <div style="padding: 24px;">
-        <button id="login-button" [disabled]="submitButtonDisabled" type="button" (click)="onSubmit()">Submit</button>
+        <button id="login-button" [disabled]="!userName.value || !password.value" type="button" (click)="onSubmit()">Submit</button>
     </div>
 </div>
-
-<!-- <div style="background-color: antiquewhite; padding: 24px; width: 15%;">
-    <div style="padding: 24px;">
-        Favorite Color: <input type="text" [formControl]="favoriteColorControl">
-    </div>
-    <div style="padding: 24px;">
-        <label for="password-input">Password: </label>
-        <input id="password-input" (keyup)="onKey($event,'password')" placeholder="Password" type="password" />
-    </div>
-    <div style="padding: 24px;">
-        <button id="login-button" [disabled]="submitButtonDisabled" type="button" (click)="onSubmit()">Submit</button>
-    </div>
-</div> -->

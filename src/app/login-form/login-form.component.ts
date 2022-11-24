@@ -9,23 +9,13 @@ import { FormControl } from '@angular/forms';
 
 
 export class LoginFormComponent {
-  userName: string | undefined;
-  password: string | undefined;
-  submitButtonDisabled: boolean = true;
-  favoriteColorControl = new FormControl('');
+  userName = new FormControl(null);
+  password = new FormControl(null);
   @Output() login: EventEmitter<any> = new EventEmitter();
 
-  onKey(event: any, type: string) {
-    console.log("THE event.target.value", event.target.value);
-    if (type === "userName") this.userName = event.target.value;
-    else if (type === "password") this.password = event.target.value;
-    if (this.userName && this.password) this.submitButtonDisabled = false;
-
-  }
 
   onSubmit() {
-    console.log("THE FINAL VALUES ", { userName: this.userName, password: this.password },this.favoriteColorControl.value);
-    this.login.emit({ username: this.userName, password: this.password });
+    this.login.emit({ username: this.userName.value, password: this.password.value });
   }
 
 }
