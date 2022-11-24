@@ -9,6 +9,7 @@ import { DocumentTableDateComponent } from './document-table-date/document-table
 import { DocumentTableStatusComponent } from './document-table-status/document-table-status.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { GridLayoutComponent } from './grid-layout/grid-layout.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     DocumentTableNameComponent,
     DocumentTableDateComponent,
     DocumentTableStatusComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    GridLayoutComponent
   ],
   imports: [
     BrowserModule,
