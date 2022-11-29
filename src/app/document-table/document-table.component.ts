@@ -21,7 +21,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdated": "4-Nov-2022",
         "lastUpdatedBy": "Ruban Moses",
         "status": "PROCESSED",
-        "doctype": "Invoice"
+        "doctype": "Invoice",
+        "size": "147 KB"
       },
       {
         "id": 2,
@@ -32,7 +33,8 @@ export class DocumentTableComponent implements OnInit {
         "createdTime": "12.57AM",
         "lastUpdatedBy": "Ram Chandran",
         "status": "SUBMITTED",
-        "doctype": "Income From Investment"
+        "doctype": "Income From Investment",
+        "size": "177 KB"
       },
       {
         "id": 3,
@@ -43,7 +45,8 @@ export class DocumentTableComponent implements OnInit {
         "createdTime": "13.55AM",
         "lastUpdatedBy": "John",
         "status": "SUBMITTED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "2147 KB"
       },
       {
         "id": 4,
@@ -54,7 +57,8 @@ export class DocumentTableComponent implements OnInit {
         "createdTime": "15.57AM",
         "lastUpdatedBy": "Ruban Moses",
         "status": "SUBMITTED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "4547 KB"
       },
       {
         "id": 5,
@@ -65,7 +69,8 @@ export class DocumentTableComponent implements OnInit {
         "createdTime": "11.55AM",
         "lastUpdatedBy": "Justin",
         "status": "PROCESSED",
-        "doctype": "Invoice"
+        "doctype": "Invoice",
+        "size": "847 KB"
       },
       {
         "id": 6,
@@ -76,7 +81,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 7,
@@ -87,7 +93,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 8,
@@ -98,7 +105,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 9,
@@ -109,7 +117,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 10,
@@ -120,7 +129,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 11,
@@ -131,7 +141,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 12,
@@ -142,7 +153,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 14,
@@ -153,7 +165,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 15,
@@ -164,7 +177,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 16,
@@ -175,7 +189,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 17,
@@ -186,7 +201,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 18,
@@ -197,7 +213,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 19,
@@ -208,7 +225,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 20,
@@ -219,7 +237,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 21,
@@ -230,7 +249,8 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       },
       {
         "id": 22,
@@ -241,14 +261,18 @@ export class DocumentTableComponent implements OnInit {
         "lastUpdatedBy": "Justin",
         "createdTime": "11.55AM",
         "status": "PROCESSED",
-        "doctype": "Expenses"
+        "doctype": "Expenses",
+        "size": "147 KB"
       }
     ]
   }
 
   onClickOfTable(document: any) {
-    console.log("selectedDocument",document)
+    console.log("selectedDocument", document)
     this.selectedDocument = document;
+  }
+  onClickOfBackButton() {
+    this.selectedDocument = null;
   }
 
 }

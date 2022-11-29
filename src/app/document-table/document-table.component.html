@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="table-header">
+    <div [ngStyle]="{'grid-column': selectedDocument != null ? '1/4' : '1 / 6'}">
         <table>
             <tr>
                 <th>Name</th>
@@ -28,5 +28,23 @@
                 </td>
             </tr>
         </table>
+    </div>
+    <div *ngIf="selectedDocument" style="grid-column:4/6;">
+        <div class="side-container">
+            <div style="display: flex; justify-content: space-between;">
+                <i class="fa fa-chevron-left" style="font-size: 32px;" (click)="onClickOfBackButton()"></i>
+                <i class="fa fa-close" style="font-size: 32px;" (click)="onClickOfBackButton()"></i>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(6,1fr); padding-top: 24px;">
+                <div style="grid-column: 1/2;">
+                    <img style="width: 64px;" src="../../assets/zipIcon.png">
+                </div>
+                <div style="grid-column: 2/6;">
+                    <div>{{selectedDocument.description}}</div>
+                    <p>{{selectedDocument.size}}</p>
+                    <p>{{selectedDocument.doctype}}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
